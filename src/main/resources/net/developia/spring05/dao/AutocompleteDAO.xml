@@ -3,4 +3,9 @@
 		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.developia.spring05.dao.AutocompleteDAO">
 
+	<select id="getWords" parameterType="String" resultType="ItemDTO">
+	SELECT id, label, value
+	FROM   t_autocomplete
+	WHERE  id LIKE '%' || #{term} || '%' 
+	</select>
 </mapper>

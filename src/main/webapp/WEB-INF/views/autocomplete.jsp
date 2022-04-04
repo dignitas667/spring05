@@ -16,9 +16,8 @@ $( function() {
       source: 'autocomplete_data',
 	  minLength : 2,
  	  delay    :500,
-
 	  select : function(event, ui) {
-		alert(ui.item.value + '가 리턴됨');
+		//alert(ui.item.value + '가 리턴됨');
 	  }
     });
 });
