@@ -1,4 +1,4 @@
-CREATE SEQUENCE seq_autocomplete;
+CREATE SEQUENCE autocomplete_no_seq;
 
 CREATE TABLE t_autocomplete
 (
